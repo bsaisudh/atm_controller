@@ -10,10 +10,18 @@
 import copy
 
 class Queue:
+    """Queue structure (FIFO)"""
     def __init__(self):
+        """Queue initialization"""
         self.q = []
     
     def enqueue(self, states, front = False):
+        """Enqueue single state or list of states to front or to the back
+
+        Args:
+            states (list or single): States to be added to Queue
+            front (bool, optional): Option to add state to opposite end. Defaults to False.
+        """
         if type(states) == list:
             if front:
                 states.reverse()
@@ -31,18 +39,36 @@ class Queue:
             
     
     def dequeue(self, back = False):
+        """Dequeue single state from front or at the back
+
+        Args:
+            back (bool, optional): Option to get state from opposite end. Defaults to False.
+
+        Returns:
+            single state
+        """
         if not back:
             return self.q.pop(0)
         else:
             return self.q.pop(-1)
         
     def len(self):
+        """Get length of queue"""
         return len(self.q)
     
     def flush(self):
+        """Remove all states in the queue"""
         self.q = []
         
     def peek(self, ndx = None):
+        """Get state information form the queue without removing from the queue
+
+        Args:
+            ndx (int, optional): If given, returns the state at the index. Else it returns the next state. Defaults to None.
+
+        Returns:
+            state
+        """
         if ndx is None:
             return copy.deepcopy(self.q)
         else:
