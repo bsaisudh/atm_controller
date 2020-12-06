@@ -10,7 +10,7 @@ A simple and secure ATM controller built using **Queued State Machine** architec
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](https://github.com/bsaisudh/atm_machine/LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/bsaisudh/atm_controller/blob/master/LICENSE) file for details
 
 ## Features
 
@@ -38,7 +38,7 @@ Note: All dependencies come with the default installation of python3
 
 ### User accounts
 
-The **ATM Controller** reads the user account information from the [user_accounts_data.csv](https://github.com/bsaisudh/atm_machine/user_accounts_data.csv) file. The default file has 4 user accounts listed below. Once the controller starts running the user doesn't have permissions to update the user accounts through UI. but can be done through API Calls. The *card number* should be strictly 6 digits and the *account number* should be strictly 6 alphanumeric characters. The *PIN* should be strictly 4 digits.
+The **ATM Controller** reads the user account information from the [user_accounts_data.csv](https://github.com/bsaisudh/atm_controller/blob/master/user_accounts_data.csv) file. The default file has 4 user accounts listed below. Once the controller starts running the user doesn't have permissions to update the user accounts through UI. but can be done through API Calls. The *card number* should be strictly 6 digits and the *account number* should be strictly 6 alphanumeric characters. The *PIN* should be strictly 4 digits.
 
 ```bash
 Name         acc_number     card_number     pin_num     balance
@@ -53,10 +53,10 @@ Banana Doe   A20204         120204          1224        1500
 * Clone the repository
 
 ```bash
-git clone --recursive https://github.com/bsaisudh/atm_machine.git
+git clone --recursive https://github.com/bsaisudh/atm_controller.git
 ```
 
-* Go to the cloned location and run [*main.py*](https://github.com/bsaisudh/atm_machine/misc/State_dig_overview.png) file
+* Go to the cloned location and run [*main.py*](https://github.com/bsaisudh/atm_controller/blob/master/main.py) file
 
 ```bash
 python main.py
@@ -65,7 +65,7 @@ python main.py
 ## State Diagram Overview
 
 <div align="center">
-  <img src="https://github.com/bsaisudh/atm_machine/misc/State_dig_overview.png"/>
+  <img src="https://github.com/bsaisudh/atm_controller/blob/master/misc/State_dig_overview.PNG"/>
 </div>
 
 ### Updating UI
@@ -89,7 +89,7 @@ There is no option for the user to update the user account details through UI. T
 ## Sample Output
 
 <div align="center">
-  <img src="https://github.com/bsaisudh/atm_machine/misc/sample.png"/>
+  <img src="https://github.com/bsaisudh/atm_controller/blob/master/misc/sample.PNG"/>
 </div>
 
 ## Contact authors
